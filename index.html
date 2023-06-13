@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: '0px',
+                    md: '728px',
+                    lg: '1024px', 
+                },
+                extend: {
+                    colors: {
+                        primaryColor: '#FF5300',
+                        bgColor: '#FFF7F4',
+                        txtColor: '#373737',
+                        btnColor: '#000000F2',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section class="bg-bgColor">
+        <header class="px-[10%] py-[20px] flex gap-[220px]">
+            <div class="font-[700] text-[40px] ">
+                <span class="text-primaryColor">Digi</span>ency
+            </div>
+            <ul class="hidden md:flex gap-[25px] items-center text-txtColor">
+                <li>
+                    <a  class="font-[500] text-[20px] cursor-pointer text-primaryColor">Home</a>
+                </li>
+                <li>
+                    <a  class="font-[500] text-[20px] cursor-pointer">About Us</a>
+                </li>
+                <li>
+                    <a  class="font-[500] text-[20px] cursor-pointer">Services</a>
+                </li>
+                <li>
+                    <a  class="font-[500] text-[20px] cursor-pointer">Portfolio</a>
+                </li>
+                <li>
+                    <a  class="font-[500] text-[20px] cursor-pointer">Blog</a>
+                </li>
+                <li>
+                    <a  class="font-[500] text-[20px] cursor-pointer">Contact Us</a>
+                </li>
+                <a class="font-[500] text-[20px] border-[1px] border-txtColor bg-bgColor rounded-[5px] py-[6px] px-[13px] cursor-pointer hover:bg-primaryColor hover:border-none hover:text-white">Let’s Talk</a>
+                
+            </ul>
+
+            <button class="text-3xl block md:hidden">
+                <i class='bx bx-menu'></i>
+            </button>
+        </header>
+        <div class="w-full items-center px-[10%] py-[120px] grid sm:grid-cols-1 md:grid-cols-2 sm:text-center md:text-left">
+            <div class="text-txtColor ">
+                <h1 class="font-[700] text-[45px]">
+                    Choose What Matters<br> To Your Business & Your <br>Customers.
+                </h1>
+                <p class="py-[18px] pb-[40px] font-[400] text-[16px]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam<br>
+in digni ssim euismod purus donec mus vulputate habitant iaculis. Com<br>
+odo enim ornare turpis tempus enim, nibh nulla. Rhoncus sed.
+                </p>
+                <a class="font-[500] text-[20px] bg-primaryColor text-white py-[10px] px-[22px] rounded-[5px] cursor-pointer hover:bg-bgColor hover:text-black hover:border-[1px] hover:rounded-[5px] hover:border-black">Get Start Now</a>
+            </div>
+            <div class="flex items-center justify-center width-[553px] height-[470px]">
+                <img src="picture/Frame 19 (1).png">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
